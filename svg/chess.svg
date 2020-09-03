@@ -1,0 +1,178 @@
+<svg width="300" height="300" viewBox="-25 -25 350 350">
+    <style type="text/css">
+        <![CDATA[
+        svg {
+            cursor: pointer;
+        }
+        ]]>
+    </style>
+    <path
+        d="m2 2 h298 v298 h-298 v-300,m50 50 h198 v198 h-198 v-200,m50 50 h98 v98 h-98 v-100,m-102 52 h100,m100 0 h100,m-148 -148 v100,m0 98 v100 z"
+        style="fill:transparent;stroke:gray;stroke-width:4"></path>
+    <defs>
+        <radialGradient id="chess-fill-black">
+            <stop offset="10%" stop-color="rgb(150, 150, 150)" />
+            <stop offset="95%" stop-color="rgb(0, 0, 0)" />
+        </radialGradient>
+        <radialGradient id="chess-fill-white">
+            <stop offset="25%" stop-color="rgb(255, 255, 255)" />
+            <stop offset="95%" stop-color="rgb(230, 230, 230)" />
+        </radialGradient>
+        <radialGradient id="chess-fill-green">
+            <stop offset="10%" stop-color="rgba(255, 255, 255,0.3)" />
+            <stop offset="95%" stop-color="rgba(0, 128, 0, 0.3)" />
+        </radialGradient>
+        <radialGradient id="chess-fill-red">
+            <stop offset="10%" stop-color="rgba(255, 255, 255,0.3)" />
+            <stop offset="95%" stop-color="rgba(255, 0, 0, 0.3)" />
+        </radialGradient>
+        <circle id="chess-0" r='18' stroke-width='2' stroke='transparent' fill="transparent"></circle>
+        <circle id="chess-black" r='18' stroke-width='2' stroke='rgb(220, 220, 220)' fill="url(#chess-fill-black)">
+        </circle>
+        <circle id="chess-white" r='18' stroke-width='2' stroke='rgb(220, 220, 220)' fill="url(#chess-fill-white)">
+        </circle>
+        <circle id="chess-green" r='18' stroke-width='2' stroke='rgb(220, 220, 220)' fill="url(#chess-fill-green)">
+        </circle>
+        <path id="chess-red" d="m-9 0 h18,m-9 -9 v18" style="fill:transparent;stroke:rgb(255, 0, 0, 0.7);stroke-width:4"
+            transform="rotate(45)">
+        </path>
+    </defs>
+
+    <g id="chesses">
+    </g>
+    <script type="text/javascript">
+        <![CDATA[
+        let chesses = document.getElementById("chesses")
+        let chessArr = [{
+                id: "a1",
+                x: 2,
+                y: 2
+            },
+            {
+                id: "a2",
+                x: 152,
+                y: 2
+            },
+            {
+                id: "a3",
+                x: 298,
+                y: 2
+            },
+            {
+                id: "a4",
+                x: 298,
+                y: 148
+            },
+            {
+                id: "a5",
+                x: 298,
+                y: 298
+            },
+            {
+                id: "a6",
+                x: 152,
+                y: 298
+            },
+            {
+                id: "a7",
+                x: 2,
+                y: 298
+            },
+            {
+                id: "a8",
+                x: 2,
+                y: 148
+            },
+            {
+                id: "b1",
+                x: 52,
+                y: 52
+            },
+            {
+                id: "b2",
+                x: 152,
+                y: 52
+            },
+            {
+                id: "b3",
+                x: 250,
+                y: 52
+            },
+            {
+                id: "b4",
+                x: 250,
+                y: 148
+            },
+            {
+                id: "b5",
+                x: 250,
+                y: 250
+            },
+            {
+                id: "b6",
+                x: 152,
+                y: 250
+            },
+            {
+                id: "b7",
+                x: 52,
+                y: 250
+            },
+            {
+                id: "b8",
+                x: 52,
+                y: 148
+            },
+            {
+                id: "c1",
+                x: 102,
+                y: 100
+            },
+            {
+                id: "c2",
+                x: 152,
+                y: 100
+            },
+            {
+                id: "c3",
+                x: 200,
+                y: 100
+            },
+            {
+                id: "c4",
+                x: 200,
+                y: 148
+            },
+            {
+                id: "c5",
+                x: 200,
+                y: 198
+            },
+            {
+                id: "c6",
+                x: 152,
+                y: 198
+            },
+            {
+                id: "c7",
+                x: 102,
+                y: 198
+            },
+            {
+                id: "c8",
+                x: 102,
+                y: 148
+            }
+        ]
+        chessArr.forEach(item => {
+            let oUse = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+            oUse.setAttribute("href", "#chess-black")
+            oUse.setAttribute("x", item.x);
+            oUse.setAttribute("y", item.y);
+            oUse.setAttribute("data-id", item.id);
+            oUse.setAttribute("data-chess", null);
+            chesses.appendChild(oUse);
+        })
+        ]]>
+    </script>
+</svg>

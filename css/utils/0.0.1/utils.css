@@ -1,0 +1,63 @@
+/* 工具集合 */
+
+
+/* 容器 自适应 参考bootstrap的容器尺寸
+    ========================================================================== */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* sm 576px~768px之间 */
+@media (min-width:576px) and (max-width:767.98px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* nromal 768px~992px之间 */
+@media (min-width:768px) and (max-width:991.98px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* md 992px~1200之间 */
+@media (min-width:992px) and (max-width:1199.98px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* lg 1200以上 */
+@media (min-width:1200px) {
+    .container {
+        width: 80%;
+        min-width: 1140px;
+    }
+}
+
+/* 表格工具
+        ========================================================================== */
+
+/* 合并单元格 */
+/* 斑马线 */
+/* 边框 */
+
+/* 表格工具
+        ========================================================================== */
+
+/* 垂直居中  */
+/* flex.col元素不可用，子元素vertical-align会失效 */
+.center-v {
+    display: table;
+    height: 100%;
+}
+
+/* 子元素：表单控件元素input,button无效 */
+.center-v>* {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle
+}

@@ -1,0 +1,205 @@
+/* 基于flex的栅格系统 */
+
+
+/* flex 自适应12格栅栏 
+    ========================================================================== */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.row-v {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.flex-center-h {
+    justify-content: center;
+}
+
+.flex-center-v {
+    align-items: center;
+    align-self: center;
+}
+
+.order-hot {
+    order: -1;
+}
+
+/* xs 小于576px */
+.col-12,
+.col-11,
+.col-10,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+    flex-shrink: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.row>.col-12,
+.row>.col-11,
+.row>.col-10,
+.row>.col-9,
+.row>.col-8,
+.row>.col-7,
+.row>.col-6,
+.row>.col-5,
+.row>.col-4,
+.row>.col-3,
+.row>.col-2,
+.row>.col-1 {
+    flex-basis: 100%;
+}
+
+.row-v>.col-12,
+.row-v>.col-11,
+.row-v>.col-10,
+.row-v>.col-9,
+.row-v>.col-8,
+.row-v>.col-7,
+.row-v>.col-6,
+.row-v>.col-5,
+.row-v>.col-4,
+.row-v>.col-3,
+.row-v>.col-2,
+.row-v>.col-1 {
+    flex-basis: 25%;
+}
+
+/* sm 576px~768px之间 */
+@media (min-width:576px) and (max-width:767.98px) {
+
+    .row>.col-12,
+    .row>.col-11,
+    .row>.col-10,
+    .row>.col-9,
+    .row>.col-8,
+    .row>.col-7,
+    .row>.col-6,
+    .row>.col-5,
+    .row>.col-4,
+    .row>.col-3,
+    .row>.col-2,
+    .row>.col-1 {
+        flex-basis: 50%;
+    }
+}
+
+/* nromal 768px~992px之间 */
+@media (min-width:768px) and (max-width:991.98px) {
+
+    .row>.col-12,
+    .row>.col-11,
+    .row>.col-10,
+    .row>.col-9,
+    .row>.col-8,
+    .row>.col-7,
+    .row>.col-6,
+    .row>.col-5,
+    .row>.col-4,
+    .row>.col-3,
+    .row>.col-2,
+    .row>.col-1 {
+        flex-basis: 25%;
+    }
+
+    .row-v>.col-12,
+    .row-v>.col-11,
+    .row-v>.col-10,
+    .row-v>.col-9,
+    .row-v>.col-8,
+    .row-v>.col-7,
+    .row-v>.col-6,
+    .row-v>.col-5,
+    .row-v>.col-4,
+    .row-v>.col-3,
+    .row-v>.col-2,
+    .row-v>.col-1 {
+        flex-basis: 50%;
+    }
+}
+
+/* md 992px~1200之间 */
+@media (min-width:992px) {
+
+    .row>.col-12 {
+        flex-basis: 100%;
+    }
+
+    .row>.col-11 {
+        flex-basis: 91.66%;
+    }
+
+    .row>.col-10 {
+        flex-basis: 83.33%;
+    }
+
+    .row>.col-9 {
+        flex-basis: 75%;
+    }
+
+    .row>.col-8 {
+        flex-basis: 66.66%;
+    }
+
+    .row>.col-7 {
+        flex-basis: 58.33%;
+    }
+
+    .row>.col-6 {
+        flex-basis: 50%;
+    }
+
+    .row>.col-5 {
+        flex-basis: 41.66%;
+    }
+
+    .row>.col-4 {
+        flex-basis: 33.33%;
+    }
+
+    .row>.col-3 {
+        flex-basis: 25%;
+    }
+
+    .row>.col-2 {
+        flex-basis: 16.66%
+    }
+
+    .row>.col-1 {
+        flex-basis: 8.33%;
+    }
+
+    .row-v>.col-12,
+    .row-v>.col-11,
+    .row-v>.col-10,
+    .row-v>.col-9,
+    .row-v>.col-8,
+    .row-v>.col-7,
+    .row-v>.col-6,
+    .row-v>.col-5,
+    .row-v>.col-4,
+    .row-v>.col-3,
+    .row-v>.col-2,
+    .row-v>.col-1 {
+        flex-basis: 100%;
+    }
+}

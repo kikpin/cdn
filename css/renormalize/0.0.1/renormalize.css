@@ -1,0 +1,67 @@
+/* 重新规范化，深度规范化，基于normalize.css v8.0.1使用，重置或美化默认样式*/
+
+/* 默认样式修改
+========================================================================== */
+
+/* rem设置100，便于计算，使用em设置各级font-size*/
+/* 优先级：root > html > body */
+:root,
+html {
+    font-size: 100px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-size: 0.16rem;
+}
+
+/* 清除样式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 字体断行 */
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+textarea {
+    word-break: break-all;
+}
+
+/* 清除样式 */
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+/* 合并边框 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 宽度不超过容器 */
+img {
+    max-width: 100%;
+    height: auto;
+}
