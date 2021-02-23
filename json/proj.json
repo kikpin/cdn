@@ -1,0 +1,30 @@
+{
+  "todaydo":{
+    "name":"今日事",
+    "english":"TodayDo",
+    "desc":"当天待办事件列表",
+    "desc-en":"a TodoList Web",
+    "url":"www.kikpin.com/todaydo",
+    "git":"https://gitee.com/little4little/demo/tree/master/todaydo",
+    "logo":"https://cdn.jsdelivr.net/gh/kikpin/cdn@master/image/todaydo/logo.png"
+  },
+  "aovo":{
+    "name":"噢哦",
+    "english":"Aovo",
+    "desc":"H5音视频播放模块",
+    "desc-en":"the module about H5 AudioVideo",
+    "url":"www.kikpin.com",
+    "npm":"",
+    "git":"https://gitee.com/kikpin/aovo",
+    "logo":"https://cdn.jsdelivr.net/gh/kikpin/cdn@master/image/aovo/default.png"
+  },
+  "nine-chess":{
+    "name":"九子成三棋",
+    "english":"the Nine Chesses Game",
+    "desc":"基于Node.js的网页黑白九子棋游戏",
+    "desc-en":"the Nine Chesses Game on Web",
+    "url":"www.kikpin.com/ninechess",
+    "git":"https://gitee.com/little4little/nine-chess",
+    "logo":"https://cdn.jsdelivr.net/gh/kikpin/cdn@master/image/ninechess/logo.png"
+  }
+}

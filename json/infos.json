@@ -1,0 +1,34 @@
+{
+  "name":"kikpin",
+  "english":"kikpin",
+  "copy":"KIKPIN.COM © 2021 All Rights Reserved",
+  "WeChat":{
+    "id":"kikpin",
+    "qrcode":"https://cdn.jsdelivr.net/gh/kikpin/cdn@master/image/qrcode/wx.png"
+  },
+  "qq":{
+    "id":"2043125230",
+    "web":"http://sighttp.qq.com/authd?IDKEY=5b811a07a1ca89a7a16040b7d6f414b0eb06b98c829fe90d",
+    "group":"https://qm.qq.com/cgi-bin/qm/qr?k=lLyfaD8QpRPsxFY3zUpNAmE0use1sAvD&jump_from=webapi",
+    "terraria":"https://qm.qq.com/cgi-bin/qm/qr?k=lLyfaD8QpRPsxFY3zUpNAmE0use1sAvD&jump_from=webapi"
+  },
+  "csdn":{
+    "name":"kikpin",
+    "url":"https://blog.csdn.net/qq_36484899"
+  },
+  "gitee":{
+    "api":"https://gitee.com/api/v5/users/little4little",
+    "url":"https://gitee.com/little4little",
+    "login":"little4little",
+    "avatar":"https://portrait.gitee.com/uploads/avatars/user/592/1778922_little4little_1584783754.png!avatar200"
+  },
+  "github":{
+    "api":"https://api.github.com/users/kikpin",
+    "url":"https://github.com/kikpin",
+    "login":"kikpin",
+    "avatar":"https://avatars.githubusercontent.com/u/67622802?v=4"
+  },
+  "blog":{
+    "github":"blog.kikpin.com"
+  }
+}
