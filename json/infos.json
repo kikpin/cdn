@@ -2,6 +2,8 @@
   "name":"kikpin",
   "english":"kikpin",
   "copy":"KIKPIN.COM © 2021 All Rights Reserved",
+  "icp":"鄂ICP备19014913号-1",
+  "police":"",
   "WeChat":{
     "id":"kikpin",
     "qrcode":"https://cdn.jsdelivr.net/gh/kikpin/cdn@master/image/qrcode/wx.png"
